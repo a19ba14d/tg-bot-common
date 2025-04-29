@@ -50,6 +50,9 @@ const (
 // Start Command Prefixes
 const (
 	StartParamPrefixPaymentRequest = "payreq_" // /start 命令处理收款请求的前缀 (e.g., /start payreq_USDT_6281127279)
+	StartParamPrefixTransferCollect = "transfer_collect_" // /start 命令处理收款请求的前缀 (e.g., /start transfer_collect_USDT_6281127279)
+	//领取红包
+	StartParamPrefixRedPacket = "redpacket_collect_" // /start 命令处理领取红包的前缀 (e.g., /start redpacket_USDT_6281127279) 
 )
 const (
 	StateInlineTransferAwaitingAmount = "inline_transfer_awaiting_amount" // 等待用户在特定聊天输入金额
