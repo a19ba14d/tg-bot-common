@@ -64,8 +64,6 @@ var (
 	CodeDatabaseError       = gcode.New(2003, "数据库操作失败", nil)
 	CodeValidationFailed    = gcode.New(2004, "参数验证失败", nil)
 
-
-
 	// 业务错误码 - 支付密码相关 (5200-5299)
 	CodePasswordIncorrect = gcode.New(5201, "支付密码错误", nil)
 	CodePasswordNotSet    = gcode.New(5202, "未设置支付密码", nil)
@@ -83,8 +81,6 @@ var (
 	CodeTransferPendingPass       = gcode.New(8006, "转账等待付款方验证", nil)
 	CodeTransferInvalidStatus     = gcode.New(8007, "转账状态无效", nil)
 
-	
-
 	// 业务错误码 - 收款请求模块 (9000-9099)
 	CodePaymentRequestNotFound      = gcode.New(9001, "收款请求不存在或已处理", nil)
 	CodePaymentRequestAlreadyPaid   = gcode.New(9002, "该收款请求已支付", nil)
@@ -92,7 +88,6 @@ var (
 	CodePaymentRequestCancelled     = gcode.New(9004, "该收款请求已取消", nil)
 	CodePaymentRequestCannotPaySelf = gcode.New(9005, "不能向自己支付", nil)
 	CodePaymentRequestInvalidStatus = gcode.New(9006, "无效的收款请求状态", nil)
-
 
 	// 业务错误码 - 日志模块 (6000-6999)
 	CodeOperationLogNotFound = gcode.New(6001, "操作日志不存在", nil)

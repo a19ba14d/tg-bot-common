@@ -30,7 +30,7 @@ const (
 	CallbackActionTransferCollect        = "transfer_collect:"    // 收款操作
 	CallbackVerifyTransferPasswordPrefix = "verify_transfer_pwd:" // Prefix for verifying transfer password via callback
 	StartParamVerifyTransferPrefix       = "verify_transfer_"     // Prefix for verifying transfer via start parameter
-	CallbackPrefixVerifyTransferPassword = "verify_transfer_pwd" // 转账密码验证数字键盘回调前缀 (Removed trailing underscore)
+	CallbackPrefixVerifyTransferPassword = "verify_transfer_pwd"  // 转账密码验证数字键盘回调前缀 (Removed trailing underscore)
 )
 
 // Inline Query Prefixes/Types
@@ -121,7 +121,6 @@ const (
 
 // Callback Prefixes/Data for Account Statement
 const (
-	CallbackAccountStatement       = "account_statement"        // Exact match for profile menu button
-	CallbackAccountStatementPrefix = "as_"                      // Prefix for account statement flow (select, page)
+	CallbackAccountStatement       = "account_statement" // Exact match for profile menu button
+	CallbackAccountStatementPrefix = "as_"               // Prefix for account statement flow (select, page)
 )
-

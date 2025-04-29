@@ -12,18 +12,17 @@ const (
 	RedPacketImageStatusFail RedPacketImageStatus = "fail"
 
 	// Context keys for UserState during red packet creation
-	RpContextKeyTokenSymbol             = "rp_token_symbol" // Stores the selected token symbol
-	RpContextKeyType                    = "rp_type"         // "fixed" or "random"
-	RpContextKeyQuantity                = "rp_quantity"     // Context key for quantity
-	RpContextKeyAmount                  = "rp_amount"       // Context key for amount
-	RpContextKeyBlessing                = "rp_blessing"     // 红包留言
-	RpContextKeySelectedCoverFileId     = "rp_selected_cover_file_id" // 已选封面 FileID (可能来自自定义选择或默认)
+	RpContextKeyTokenSymbol              = "rp_token_symbol"                 // Stores the selected token symbol
+	RpContextKeyType                     = "rp_type"                         // "fixed" or "random"
+	RpContextKeyQuantity                 = "rp_quantity"                     // Context key for quantity
+	RpContextKeyAmount                   = "rp_amount"                       // Context key for amount
+	RpContextKeyBlessing                 = "rp_blessing"                     // 红包留言
+	RpContextKeySelectedCoverFileId      = "rp_selected_cover_file_id"       // 已选封面 FileID (可能来自自定义选择或默认)
 	RpContextKeyCurrentCustomCoverFileId = "rp_current_custom_cover_file_id" // 当前显示的自定义封面 FileID (临时存储)
-	RpContextKeyChatID                  = "rp_chat_id"        // Stores the chat ID where the red packet interaction happens
-	RpContextKeyTotalAmount             = "rp_total_amount" // Context key for the calculated total amount (used for pass-free check)
-	RpContextKeyCurrentPassword         = "rp_current_password" // Context key for storing the currently entered password digits
+	RpContextKeyChatID                   = "rp_chat_id"                      // Stores the chat ID where the red packet interaction happens
+	RpContextKeyTotalAmount              = "rp_total_amount"                 // Context key for the calculated total amount (used for pass-free check)
+	RpContextKeyCurrentPassword          = "rp_current_password"             // Context key for storing the currently entered password digits
 )
-
 
 // IsValid checks if the status string is a valid RedPacketImageStatus.
 func (s RedPacketImageStatus) IsValid() bool {
@@ -57,9 +56,9 @@ func (t RedPacketType) IsValid() bool {
 type RedPacketStatus string
 
 const (
-	RedPacketStatusActive RedPacketStatus = "active" // Red packet is active and can be claimed. (Matches DB 'active')
-	RedPacketStatusEmpty   RedPacketStatus = "empty"   // All claims have been made.
-	RedPacketStatusExpired RedPacketStatus = "expired" // Red packet has passed its expiration time.
+	RedPacketStatusActive    RedPacketStatus = "active"    // Red packet is active and can be claimed. (Matches DB 'active')
+	RedPacketStatusEmpty     RedPacketStatus = "empty"     // All claims have been made.
+	RedPacketStatusExpired   RedPacketStatus = "expired"   // Red packet has passed its expiration time.
 	RedPacketStatusCancelled RedPacketStatus = "cancelled" // Red packet has been cancelled by the creator.
 )
 
@@ -67,8 +66,8 @@ const (
 type RedPacketClaimStatus string
 
 const (
-	RedPacketClaimStatusPending RedPacketClaimStatus = "pending" // The claim record is available but not yet claimed.
-	RedPacketClaimStatusClaimed RedPacketClaimStatus = "claimed" // The claim has been successfully made by a user.
+	RedPacketClaimStatusPending   RedPacketClaimStatus = "pending"   // The claim record is available but not yet claimed.
+	RedPacketClaimStatusClaimed   RedPacketClaimStatus = "claimed"   // The claim has been successfully made by a user.
 	RedPacketClaimStatusCancelled RedPacketClaimStatus = "cancelled" // The claim has been cancelled (e.g., due to red packet cancellation).
 )
 
