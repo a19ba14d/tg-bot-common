@@ -83,4 +83,7 @@ const (
 
 	// Minimum amount allowed for a single claim (adjust as needed)
 	RedPacketMinClaimAmount = 0.001
+
+	// Maximum number of red packets allowed per creation
+	RedPacketMaxQuantity = 100
 )
