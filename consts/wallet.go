@@ -21,6 +21,6 @@ var AssetWalletList = []Wallet{
 	{Code: CoinTypeTRX, CoinType: "coin", DecimalPlaces: 8, IsCreateWallet: true, WalletType: "ASSET"},
 	{Code: CoinTypeUSDT, CoinType: "coin", DecimalPlaces: 8, IsCreateWallet: true, WalletType: "ASSET"},
 
-	{Code: FiatTypeUSD, CoinType: "fiat", DecimalPlaces: 4, IsCreateWallet: true, WalletType: "ASSET"},
-	{Code: FiatTypeCNY, CoinType: "fiat", DecimalPlaces: 4, IsCreateWallet: true, WalletType: "ASSET"},
+	// {Code: FiatTypeUSD, CoinType: "fiat", DecimalPlaces: 4, IsCreateWallet: true, WalletType: "ASSET"},
+	// {Code: FiatTypeCNY, CoinType: "fiat", DecimalPlaces: 4, IsCreateWallet: true, WalletType: "ASSET"},
 }
