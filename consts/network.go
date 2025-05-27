@@ -2,9 +2,9 @@ package consts
 
 // 网络类型常量
 const (
-	NetworkTypeETH   = "TROM"  // 以太坊网络
+	NetworkTypeETH   = "ETH"   // 以太坊网络
 	NetworkTypeTRC20 = "TRC20" // 波场网络
-	NetworkTypeTRX   = "ETH"   // 波场网络
+	NetworkTypeTRX   = "TRON"  // 波场网络
 	NetworkTypeERC20 = "ERC20" // 以太坊网络
 
 	CoinTypeETH  = "ETH"  // 以太坊
